@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shrouded Harbor Signals</title>
+  <meta name="description" content="A foggy harbor signal duty game. Guide ships safely through the mist as a lighthouse keeper across 50 night shifts.">
+  <style>
+    :root {
+      --bg: #0a1929;
+      --bg2: #0f2238;
+      --text: #c8e0f4;
+      --muted: #7a93a8;
+      --accent: #3cc0a0;
+      --accent2: #5eb3f0;
+      --line: rgba(255,255,255,.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+    main { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .hero { text-align: center; padding: 80px 0 48px; }
+    .badge { display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 20px; }
+    h1 { font-size: 42px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 12px; color: #e8f4ff; }
+    .subtitle { font-size: 20px; color: var(--accent2); margin-bottom: 18px; }
+    .intro { max-width: 680px; margin: 0 auto; color: var(--muted); font-size: 16px; }
+    section { padding: 48px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 28px; margin-bottom: 24px; color: #e8f4ff; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .shot-card { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    .shot-card img { width: 100%; display: block; }
+    .shot-card h3 { padding: 14px 16px 4px; font-size: 16px; color: #e8f4ff; }
+    .shot-card p { padding: 0 16px 16px; font-size: 14px; color: var(--muted); }
+    .card { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+    .card p { margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .features { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .feature { background: var(--bg2); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+    .feature .step { display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 50%; background: var(--accent); color: #062014; font-weight: 700; font-size: 14px; margin-bottom: 10px; }
+    .feature h3 { font-size: 15px; margin-bottom: 6px; color: #e8f4ff; }
+    .feature p { font-size: 13px; color: var(--muted); }
+    .info { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+    .info > div { background: var(--bg2); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+    .info .label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: 4px; }
+    .info .value { font-size: 15px; color: #e8f4ff; }
+    footer { border-top: 1px solid var(--line); padding: 32px 0; text-align: center; color: var(--muted); font-size: 14px; }
+    footer a { color: var(--accent2); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) { h1 { font-size: 30px; } .hero { padding: 50px 0 32px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="badge">Games / Puzzle</div>
+      <h1>Shrouded Harbor Signals</h1>
+      <p class="subtitle">Harbor Signal Duty</p>
+      <p class="intro">A foggy harbor signal duty game. Stand watch at five historic lighthouses along the Atlantic coast and guide ships safely through the mist using foghorns, lamps, flags, and distress signals.</p>
+    </header>
+
+    <section class="screens">
+      <h2>Screenshots</h2>
+      <div class="grid">
+        <div class="shot-card">
+          <img src="screenshots_65/menu.png" alt="Shrouded Harbor Signals main menu">
+          <h3>Main Menu</h3>
+          <p>Start your shift, browse 50 levels, or adjust settings.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/game1.png" alt="Guiding ships through fog">
+          <h3>On Watch</h3>
+          <p>Read each ship's intent and reply with the correct signal.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/game2.png" alt="Multiple ships approaching">
+          <h3>Multiple Contacts</h3>
+          <p>Manage several vessels before their patience runs out.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/game3.png" alt="Storm and low visibility">
+          <h3>Storm Duty</h3>
+          <p>Heavy rain, thunder, and blizzards reduce visibility.</p>
+        </div>
+        <div class="shot-card">
+          <img src="screenshots_65/game-success.png" alt="Shift complete">
+          <h3>Shift Complete</h3>
+          <p>Guide all ships to safety before time or mistakes run out.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>About Shrouded Harbor Signals</h2>
+      <div class="card">
+        <p>Shrouded Harbor Signals is an offline puzzle game built with SpriteKit. You play as a lighthouse keeper on the Atlantic coast, guiding ships through fog, rain, and storms by choosing the correct signal response for each vessel's intent.</p>
+        <p>Journey across five historic lighthouse stations &mdash; Portland Head, Boston Harbor, Cape Cod, Sandy Hook, and Cape Ray &mdash; spanning 50 night shifts from the 1930s to the 1960s. Each station introduces new equipment and harsher weather.</p>
+        <p>Every shift challenges you to read incoming ships, judge their intent (inbound, outbound, anchorage, distress, or unknown), and reply with the right signal before patience runs out. Manage your mistakes and guide all required ships to complete the shift.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to Play</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="step">1</span>
+          <h3>Tap a Ship</h3>
+          <p>Touch any approaching vessel to focus on it. Its name, type, and intent appear in the HUD.</p>
+        </div>
+        <div class="feature">
+          <span class="step">2</span>
+          <h3>Read the Intent</h3>
+          <p>Ships signal Inbound, Outbound, Anchorage, Distress, or Unknown. Match the correct reply.</p>
+        </div>
+        <div class="feature">
+          <span class="step">3</span>
+          <h3>Send a Signal</h3>
+          <p>Tap one of six signal buttons: Foghorn, Lamp, Flag, Ack, Warn, or SOS.</p>
+        </div>
+        <div class="feature">
+          <span class="step">4</span>
+          <h3>Beat the Clock</h3>
+          <p>Each ship has a patience timer. Reply correctly before it expires or lose a life.</p>
+        </div>
+        <div class="feature">
+          <span class="step">5</span>
+          <h3>Watch the Weather</h3>
+          <p>Fog, rain, thunder, and blizzards lower visibility. Radar unlocks at Cape Cod.</p>
+        </div>
+        <div class="feature">
+          <span class="step">6</span>
+          <h3>Complete the Shift</h3>
+          <p>Guide all required ships within the mistake limit to clear the level and unlock the next.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Support</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>How do I play?</h3>
+          <p>Tap a ship to focus, read its intent, then tap the matching signal button. The first three levels are tutorials.</p>
+        </div>
+        <div class="feature">
+          <h3>Does it need internet?</h3>
+          <p>No. Shrouded Harbor Signals is fully offline. No accounts, no ads, no tracking.</p>
+        </div>
+        <div class="feature">
+          <h3>Need help?</h3>
+          <p>Visit the App Store product page for support contact after release.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>App Information</h2>
+      <div class="info">
+        <div><span class="label">Genre</span><div class="value">Games / Puzzle</div></div>
+        <div><span class="label">Compatibility</span><div class="value">iOS 15.0 or later</div></div>
+        <div><span class="label">Device Support</span><div class="value">iPhone only</div></div>
+        <div><span class="label">Age Rating</span><div class="value">4+</div></div>
+        <div><span class="label">Version</span><div class="value">1.0</div></div>
+        <div><span class="label">Language</span><div class="value">English</div></div>
+        <div><span class="label">Privacy</span><div class="value">No data collected</div></div>
+        <div><span class="label">Bundle ID</span><div class="value">com.rosewood.fogharbor.game</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2026 Shrouded Harbor Signals. All rights reserved.</div>
+    <div><a href="/privacy.html">Privacy Policy</a></div>
+  </footer>
+</body>
+</html>
