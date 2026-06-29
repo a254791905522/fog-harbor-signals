@@ -1,129 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shrouded Harbor Signals - App Store Review Text</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; max-width: 900px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    .lede { color: #555; margin-top: 0; }
-    .field { background: #f5fbf7; border-left: 4px solid #31cf72; padding: 14px 18px; margin: 14px 0; border-radius: 4px; }
-    .field > label { display: block; font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: .08em; color: #2a8a52; }
-    .field > .value { display: block; margin: 6px 0 0 0; white-space: pre-wrap; font-family: inherit; font-size: inherit; color: inherit; }
-    .field.promo { background: #fff8e6; border-left-color: #e0a800; }
-    .field.promo > label { color: #8a6a00; }
-    h2 { margin-top: 36px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrouded Harbor Signals - App Store Review Text</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 32px auto; padding: 0 20px; color: #1a1a1a; background: #f8f9fa; }
+  h1 { font-size: 26px; margin-bottom: 8px; }
+  .subtitle { color: #555; margin-bottom: 24px; }
+  .field { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .field-label { font-weight: 600; font-size: 13px; text-transform: uppercase; color: #555; margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .field-value { font-size: 15px; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word; }
+  .char-count { font-weight: 400; color: #888; font-size: 12px; }
+  .char-count.ok { color: #2ea44f; }
+  .char-count.warn { color: #d1242f; }
+  button.copy { font-size: 12px; padding: 4px 10px; border: 1px solid #d1d5da; border-radius: 6px; background: #f6f8fa; cursor: pointer; }
+  button.copy:hover { background: #eef1f5; }
+  .section-title { font-size: 18px; font-weight: 700; margin-top: 28px; margin-bottom: 12px; }
+  .fact-card { background: #f0f7ff; border-left: 4px solid #0969da; padding: 12px 16px; border-radius: 0 8px 8px 0; }
+</style>
 </head>
 <body>
-  <h1>Shrouded Harbor Signals - App Store Metadata</h1>
-  <p class="lede">Complete App Store Connect metadata for copy-paste during submission.</p>
+<h1>Shrouded Harbor Signals - App Store Review Text</h1>
+<p class="subtitle">Copy each field into App Store Connect. Character counts are shown for fields with limits.</p>
 
-  <div class="field">
-    <label>App Name</label>
-    <pre class="value">Shrouded Harbor Signals</pre>
-  </div>
+<div class="section-title">App Information</div>
 
-  <div class="field">
-    <label>Subtitle</label>
-    <pre class="value">Foggy Harbor Signal Duty</pre>
-  </div>
+<div class="field">
+  <div class="field-label">App Name</div>
+  <div class="field-value" id="app-name">Shrouded Harbor Signals</div>
+  <button class="copy" onclick="copyToClipboard('app-name')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Promotional Text</label>
-    <pre class="value">Guide ships through fog and storms at five historic lighthouses. 50 night shifts of signal duty await. Can you keep the harbor safe?</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Subtitle <span class="char-count ok">18 / 30</span></div>
+  <div class="field-value" id="subtitle">Harbor Signal Duty</div>
+  <button class="copy" onclick="copyToClipboard('subtitle')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Description</label>
-    <pre class="value">Shrouded Harbor Signals is an offline puzzle game where you stand watch as a lighthouse keeper on the Atlantic coast. Through fog, rain, thunder, and blizzards, you must read each approaching ship and reply with the correct signal before its patience runs out.
+<div class="field">
+  <div class="field-label">Bundle ID</div>
+  <div class="field-value" id="bundle-id">com.rosewood.fogharbor.game</div>
+  <button class="copy" onclick="copyToClipboard('bundle-id')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">SKU</div>
+  <div class="field-value" id="sku">fogharbor-ios-001</div>
+  <button class="copy" onclick="copyToClipboard('sku')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Category</div>
+  <div class="field-value" id="category">Games / Puzzle</div>
+  <button class="copy" onclick="copyToClipboard('category')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Age Rating</div>
+  <div class="field-value" id="age-rating">4+</div>
+  <button class="copy" onclick="copyToClipboard('age-rating')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Version</div>
+  <div class="field-value" id="version">1.0</div>
+  <button class="copy" onclick="copyToClipboard('version')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Copyright</div>
+  <div class="field-value" id="copyright">2026 Rosewood Studio</div>
+  <button class="copy" onclick="copyToClipboard('copyright')">Copy</button>
+</div>
+
+<div class="section-title">URLs</div>
+
+<div class="field">
+  <div class="field-label">Support URL</div>
+  <div class="field-value" id="support-url">https://fog-harbor-signals.vercel.app</div>
+  <button class="copy" onclick="copyToClipboard('support-url')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Marketing URL</div>
+  <div class="field-value" id="marketing-url">https://fog-harbor-signals.vercel.app</div>
+  <button class="copy" onclick="copyToClipboard('marketing-url')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Privacy Policy URL</div>
+  <div class="field-value" id="privacy-url">https://fog-harbor-signals.vercel.app/privacy.html</div>
+  <button class="copy" onclick="copyToClipboard('privacy-url')">Copy</button>
+</div>
+
+<div class="section-title">App Store Localizable Text</div>
+
+<div class="field">
+  <div class="field-label">Promotional Text <span class="char-count ok">129 / 170</span></div>
+  <div class="field-value" id="promo-text">Stand watch at five historic lighthouses and guide ships through fog, rain, and storms using the correct signal for every vessel.</div>
+  <button class="copy" onclick="copyToClipboard('promo-text')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Keywords <span class="char-count ok">78 / 100</span></div>
+  <div class="field-value" id="keywords">harbor,signal,fog,lighthouse,ship,beacon,port,night,watch,duty,weather,offline</div>
+  <button class="copy" onclick="copyToClipboard('keywords')">Copy</button>
+</div>
+
+<div class="field">
+  <div class="field-label">Description</div>
+  <div class="field-value" id="description">Shrouded Harbor Signals is an offline puzzle game built with SpriteKit. You play as a lighthouse keeper on the Atlantic coast, guiding ships through fog, rain, and storms by choosing the correct signal response for each vessel's intent.
 
 HOW TO PLAY
-- Tap a ship to focus on it. Its name, type, and intent appear on screen.
-- Read the ship's intent: Inbound, Outbound, Anchorage, Distress, or Unknown.
+- Tap a ship to focus on it. The ship's name, type, and intent appear in the HUD.
+- Read the intent: Inbound, Outbound, Anchorage, Distress, or Unknown.
 - Tap the matching signal button: Foghorn, Lamp, Flag, Ack, Warn, or SOS.
-- Reply correctly before the patience timer expires. Too many mistakes ends the shift.
+- Reply before the ship's patience timer expires, or it counts as a mistake.
 - Guide all required ships within the mistake limit to complete the shift.
 
 50 NIGHT SHIFTS
-Journey across five historic lighthouse stations spanning the 1930s to the 1960s:
-- Portland Head (Levels 1-10, 1930s): Learn the basics with foghorn and lamp.
-- Boston Harbor (Levels 11-20, 1940s): Handle heavier traffic and rain.
-- Cape Cod (Levels 21-30, 1950s): Radar arrives to help spot ships in storms.
-- Sandy Hook (Levels 31-40, 1950s): Thunder and low visibility test your nerve.
-- Cape Ray (Levels 41-50, 1960s): Blizzards and dense traffic in the final chapter.
+Journey across five historic lighthouse stations from the 1930s to the 1960s:
+- Portland Head (Levels 1-10, 1930s): Foghorn and lamp only. Learn the basics.
+- Boston Harbor (Levels 11-20, 1940s): Denser fog and more simultaneous contacts.
+- Cape Cod (Levels 21-30, 1950s): Radar unlocked. Storms intensify.
+- Sandy Hook (Levels 31-40, 1950s): Heavy rain and faster ships.
+- Cape Ray (Levels 41-50, 1960s): Blizzard visibility and maximum traffic.
 
-SIGNALS &amp; SHIPS
-- Six signal types: Foghorn, Lamp, Flag, Acknowledge, Warn, and SOS.
-- Eight vessel types: Fishing, Cargo, Tanker, Passenger, Sail, Steam, Naval, and Rescue.
-- Five weather conditions: Clear, Fog, Heavy Rain, Thunder, and Blizzard.
-- Signals unlock progressively as you advance through each station.
+SHIP AND SIGNAL SYSTEM
+- 8 ship types: Fishing, Cargo, Tanker, Passenger, Sail, Steam, Naval, Rescue.
+- 5 ship intents: Inbound, Outbound, Anchorage, Distress, Unknown.
+- 6 signal buttons: Foghorn, Lamp, Flag, Ack, Warn, SOS.
+- Correct mapping: Inbound replies with Lamp, Outbound with Foghorn, Anchorage with Flag, Distress with SOS, Unknown with Ack. Danger ships in bad weather at level 6 or higher require Warn.
 
 FEATURES
-- 50 levels across 5 historic lighthouse stations.
-- Progressive difficulty: weather worsens and traffic increases.
-- No score, no stars &mdash; just clear the shift with fewer mistakes.
+- 50 levels across five historic lighthouse stations.
+- 8 ship types with distinct silhouettes and behavior.
+- 6 signal buttons unlocked progressively as levels advance.
+- 4 weather conditions: Fog, HeavyRain, Thunder, Blizzard, each reducing visibility radius.
+- Patience timer per ship: 25 seconds minus 3 seconds per ship index.
+- Radar unlock at Cape Cod (level 21+) adds a rotating scan line.
+- Morse code buffer displayed in HUD for each signal sent.
+- Linear level unlock stored locally via NSUserDefaults.
 - Fully offline. No ads, no in-app purchases, no accounts, no tracking.
-- Tutorial levels (1-3) teach every signal type.
 - Portrait orientation, iPhone only.
 
-Shrouded Harbor Signals is a calm, atmospheric puzzle about reading the sea and replying in time. Every ship has a story; every shift has a challenge.</pre>
-  </div>
+Shrouded Harbor Signals is a calm, atmospheric signal duty game about reading the fog and replying with the right light, sound, or flag.</div>
+  <button class="copy" onclick="copyToClipboard('description')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Keywords</label>
-    <pre class="value">harbor,signal,fog,lighthouse,ship,beacon,port,night,watch,duty,weather,offline</pre>
-  </div>
+<div class="section-title">Review Information</div>
 
-  <div class="field">
-    <label>Support URL</label>
-    <pre class="value">https://fog-harbor-signals.vercel.app/</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Sign-in Required</div>
+  <div class="field-value" id="signin">No</div>
+  <button class="copy" onclick="copyToClipboard('signin')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Privacy Policy URL</label>
-    <pre class="value">https://fog-harbor-signals.vercel.app/privacy.html</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Review Contact - Last Name</div>
+  <div class="field-value" id="contact-last">Omondi</div>
+  <button class="copy" onclick="copyToClipboard('contact-last')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Primary Category</label>
-    <pre class="value">Games</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Review Contact - First Name</div>
+  <div class="field-value" id="contact-first">Evans</div>
+  <button class="copy" onclick="copyToClipboard('contact-first')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Secondary Category</label>
-    <pre class="value">Puzzle</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Phone Number</div>
+  <div class="field-value" id="phone">+1 2096550297</div>
+  <button class="copy" onclick="copyToClipboard('phone')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Content Rights</label>
-    <pre class="value">This app does not contain third-party content. All artwork, code, and design are original.</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Email</div>
+  <div class="field-value" id="email">croitorzamkov@gmail.com</div>
+  <button class="copy" onclick="copyToClipboard('email')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Age Rating</label>
-    <pre class="value">4+ (No objectionable content)</pre>
-  </div>
+<div class="field">
+  <div class="field-label">Review Notes</div>
+  <div class="field-value" id="review-notes">1. Launch the app.
+2. The main menu shows "Shrouded Harbor Signals" title with "Start Shift", "Levels", and "Settings" buttons on a foggy harbor background.
+3. Tap "Start Shift" to enter Level 1. Levels 1-3 are tutorials with hint text teaching each signal type.
+4. The game scene shows the harbor with approaching ships, a HUD with shift timer, ships guided count, and mistake count.
+5. Tap a ship to focus on it. The ship's name, type, and intent (Inbound, Outbound, Anchorage, Distress, or Unknown) appear in the HUD.
+6. Tap the matching signal button at the bottom of the screen: Foghorn (Outbound), Lamp (Inbound), Flag (Anchorage), Ack (Unknown), Warn (Danger ship in bad weather at level 6+), or SOS (Distress).
+7. If the signal is correct, the ship is guided successfully. If wrong or the patience timer expires, a mistake is recorded.
+8. Complete the shift by guiding the required number of ships within the mistake limit. A "Shift Complete" popup appears with the count of ships guided and mistakes made.
+9. From the popup, tap "Next Level" to proceed.
+10. Return to menu and tap "Levels" to see the level select grid. Verify locked levels cannot be opened until the previous level is completed.
+11. Progress to Level 21 (Cape Cod station) or later to verify the radar sweep appears on screen.
+12. Tap the Settings button to verify Music and Sound Effects toggles.
+13. Verify the app is fully offline: no network calls, no accounts, no ads, no in-app purchases. All progress is saved locally on device via NSUserDefaults.
+14. The app supports portrait orientation only and iPhone only. ITSAppUsesNonExemptEncryption = false.</div>
+  <button class="copy" onclick="copyToClipboard('review-notes')">Copy</button>
+</div>
 
-  <div class="field">
-    <label>Data Collection Disclosure</label>
-    <pre class="value">Shrouded Harbor Signals does not collect, store, transmit, or share any personal information. The app does not include account registration, social login, advertising SDKs, analytics SDKs, tracking SDKs, or third-party purchase services. All gameplay progress is stored locally on the device.</pre>
-  </div>
+<div class="section-title">Gameplay Fact Card Summary</div>
+<div class="fact-card">
+<strong>Core screen:</strong> Foggy harbor scene with approaching ships, shift timer, ships guided count, mistake count, and 6 signal buttons at the bottom.
+<br><strong>Controls:</strong> Tap a ship to focus; tap a signal button (Foghorn, Lamp, Flag, Ack, Warn, SOS) to reply.
+<br><strong>Goal:</strong> Guide the required number of ships within the mistake limit before the shift timer ends.
+<br><strong>Fail:</strong> Mistakes exceed the limit or shift timer reaches zero before all required ships are guided.
+<br><strong>Progression:</strong> 50 levels across 5 historic lighthouse stations (Portland Head, Boston Harbor, Cape Cod, Sandy Hook, Cape Ray), sequential unlock, local save.
+</div>
 
-  <div class="field">
-    <label>What's New in Version 1.0</label>
-    <pre class="value">Initial release of Shrouded Harbor Signals. 50 night shifts across five historic lighthouse stations with six signal types, eight vessel types, and five weather conditions.</pre>
-  </div>
-
-  <h2>Review Notes for Apple</h2>
-  <div class="field promo">
-    <label>Review Notes for Apple</label>
-    <pre class="value">Shrouded Harbor Signals is a fully offline single-player puzzle game. There are no accounts, no network calls, no ads, and no in-app purchases. Gameplay: tap a ship to focus, read its intent, then tap the matching signal button (Foghorn, Lamp, Flag, Ack, Warn, or SOS). Guide all required ships within the mistake limit to complete the shift. Levels 1-3 are tutorials that teach each signal.
-
-The app uses ITSAppUsesNonExemptEncryption = false because it contains no encryption functionality.
-
-All screenshots are captured from actual gameplay on iPhone. The app supports portrait orientation only and iPhone only.</pre>
-  </div>
+<script>
+function copyToClipboard(elementId) {
+  const text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    const btn = document.querySelector('button[onclick="copyToClipboard(\'' + elementId + '\')"]');
+    const original = btn.innerText;
+    btn.innerText = 'Copied';
+    setTimeout(function() { btn.innerText = original; }, 1200);
+  });
+}
+</script>
 </body>
 </html>
